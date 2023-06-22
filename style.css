@@ -1,5 +1,5 @@
 /* =========================================navbar============================================================= */
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 .nav-itens{
     display: flex;
     align-items: center;
@@ -8,13 +8,36 @@
 }
 
 .nav-itens li a{
+    color: black;
     margin: 5px;
     text-decoration: none;
-}
-body{
-    width: auto;
+    padding: 5px;
+    background-color: #4ac3e0;
+    border: 2px solid #4ac3e0;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+
+
+
 }
 
+.nav-itens li a:hover{
+    background-color: #d0d0d0;
+    border: 2px solid #d0d0d0;
+    transition: 1.0s;
+}
+
+.navbar-brand{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.sp a:hover{
+    background-color: lightgreen !important;
+    border: 2px solid lightgreen !important;
+}
 
 
 
@@ -137,21 +160,27 @@ section.slider{
 
 
 
-/* ======================================================Grid==================================================== */
+/* ======================================================Cursos==================================================== */
 
 .cursos{
     
-    display: flex;
+    display: grid;
     text-align: center;
-    
+    grid-template-areas: 
+    '1 2 3'
+    ;
+    gap: 5px;
     
 }
+
+
 
 .content-curso{
     
     background-color: aliceblue;
-    padding: 5px;
-    
+    padding: 0;
+    width: auto;
+    height: 250px;
     
 
     
@@ -160,3 +189,58 @@ section.slider{
 
     
     
+
+
+
+
+
+
+/* ======================================================Serviços==================================================== */
+
+.service-box{
+    margin-top: 15px;
+    gap: 5px;
+    display: grid;
+    grid-template-areas: 
+    'img desc desc';
+
+}
+
+.service-box div{
+    height: 400px;
+    padding: 15px;
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+.img-box{
+    grid-area: img;
+
+}
+
+.descricao{
+    grid-area: desc;
+}
+
+
+
+
+
+
+footer{
+    background-color: white;
+    height: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
