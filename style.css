@@ -1,5 +1,12 @@
 /* =========================================navbar============================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.menu{
+    display: none !important;
+}
+
 .nav-itens{
     display: flex;
     align-items: center;
@@ -32,6 +39,7 @@
     border: 2px solid black;
     border-radius: 5px;
     background-color: black;
+
 }
 
 .sp a:hover{
@@ -103,13 +111,13 @@ section.slider{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 34.5%;
     display: flex;
     justify-content: center;
 }
 
 .nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid blue;
+    border: 1px solid #d0d0d0;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -121,11 +129,11 @@ section.slider{
 }
 
 .nav-manual .manual-btn:hover{
-    background-color: blue;
+    background-color: #d0d0d0;
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: blue;
+    background-color: #d0d0d0;
 } 
 
 #radio1:checked ~ .primeiro{
@@ -161,29 +169,39 @@ section.slider{
 
 
 /* ======================================================Cursos==================================================== */
+.titulocursos h1{
+    color: #d0d0d0;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em #4ac3e0;
+    
+    
+}
+
+.container-slider{
+    display: none;
+}
+
+
 
 .cursos{
-    
-    display: grid;
     text-align: center;
-    grid-template-areas: 
-    '1 2 3'
-    ;
-    gap: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    
     
 }
 
 
 
-.content-curso{
-    
-    background-color: aliceblue;
-    padding: 0;
-    width: auto;
-    height: 250px;
-    
-
-    
+.cursos a img{
+    border: 3px solid #4ac3e0;
+    border-radius: 10px;
+    width: 307px;
 }
 
 
@@ -198,44 +216,205 @@ section.slider{
 /* ======================================================Serviços==================================================== */
 
 .service-box{
-    margin-top: 15px;
-    gap: 5px;
-    display: grid;
-    grid-template-areas: 
-    'img desc desc';
+    /* border: 3px solid #4ac3e0; */
+    border-radius: 10px;
+
+    height: 306px;
+    width: 612px !important;
+
+    padding: 0 !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
 
 }
 
-.service-box div{
-    height: 400px;
-    padding: 15px;
-    border: 2px solid red;
-    background-color: aqua;
-}
-
-.img-box{
-    grid-area: img;
-
-}
 
 .descricao{
-    grid-area: desc;
+    
+
+    height: auto;
+    width: 306px;
+
+
+    display: flex;
+    align-items:center ;
+    
+    
+}
+
+
+.descricao ul li{
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    font-size: 1,9rem;
+    text-shadow: 0.1em 0.1em 0.2em #022129;
+    
+    
+}
+
+.btn{
+    width: 150px;
+    margin-top: 15%;
+    margin-left: 10%;
+      
+}
+
+.descricao button{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    
+}
+
+
+.descricao button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 80px #0d94b6 ;
+    
+
 }
 
 
 
 
 
+
+
+.img-box img{
+    margin: -3px !important;
+    border-radius: 10px;
+    /* border:  3px solid #4ac3e0; */
+}
+
+.whats img{
+    position: fixed;
+    bottom: 6%;
+    right: 4%;
+    width: 50px ;
+    height: 50px;
+    
+}
+
+
+
+
+/* ========================================================Rodape===================================================== */
 
 footer{
     background-color: white;
-    height: 350px;
+    height: auto;
+    
+}
+.rodape{
+    display: flex;
+    
+
+}
+
+.criador h1{
+    font-size: 15px;
+}
+
+
+
+.redes-sociais a img{
+    height: 30px;
+    width: 30px;
+    
+}
+
+.redes-sociais{
+    display: flex;
 }
 
 
 
 
 
+
+/* ===============================================Responsividade========================================================= */
+
+@media(max-width: 600px){
+    /* =======================NavBar====================== */
+    .navbar-light{
+        display: grid !important;
+        grid-template-areas: 
+        'img vazio menu';
+        
+    }
+    
+    .menu{
+        display: flex !important;
+        grid-area: menu;
+
+    }
+
+    .nav-itens{
+        display: none;
+
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    /* ==================================Cursos====================== */
+    *{
+        box-sizing: border-box;
+    }
+    .cursos{
+        display: none;
+
+    }
+    
+    .container-slider{
+        margin: 0 !important;
+        padding: 0 !important;
+
+
+        
+        
+        display: flex !important;
+        width: 100%;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+
+    }
+
+    .container-images{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .slidermobile{
+        position: absolute;
+        width: 100%;
+        
+       
+        
+        
+    
+    
+    }
+
+    #next-btn, #prev-btn{
+        width: 30px;
+        height: 30px;
+
+    }
+    
+    
+}
+    
 
 
 
