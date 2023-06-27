@@ -363,56 +363,71 @@ footer{
     }
 
     /* ==================================Cursos====================== */
-    *{
-        box-sizing: border-box;
-    }
-    .cursos{
-        display: none;
-
-    }
     
-    .container-slider{
-        margin: 0 !important;
-        padding: 0 !important;
+   .cursos{
+    display: none;
 
-
-        
-        
-        display: flex !important;
-        width: 100%;
-        min-height: 100vh;
-        align-items: center;
-        justify-content: center;
-        gap:1rem;
-
-    }
-
-    .container-images{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    .slidermobile{
-        position: absolute;
-        width: 100%;
-        
-       
-        
-        
     
-    
-    }
 
-    #next-btn, #prev-btn{
-        width: 30px;
-        height: 30px;
+   }
+   
+   .container-box{
+    position: relative;
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
 
-    }
+
+   }
+
+   .gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+   }
+
+   .gallery-wrapper{
+    overflow-x: auto;
+   }
+
+   .arrow-left, .arrow-right{
+    margin: -6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
     
+    border: none;
+    background: linear-gradient(to left, transparent 0%, #4ac3e0 300%);
+   }
+
+   .arrow-right {
+    left: auto;
+    right: 0;
+
+    background: linear-gradient(to right, transparent 0%, #4ac3e0 300%);
+   }
+   
+   .item{
+    width: 306px;
+    height: auto;
+    flex-shrink: 0;
+    opacity: 0.3;
+    transition:  all 600ms ease-in-out;
+
     
+
+
+   }
+
+   .current-item{
+    opacity: 1;
+    border: 3px solid #4ac3e0;
+    border-radius: 5px;
+   }
+
+
 }
     
 
