@@ -169,6 +169,10 @@ section.slider{
 
 
 /* ======================================================Cursos==================================================== */
+
+.container-box{
+    display: none;
+}
 .titulocursos h1{
     color: #d0d0d0;
     text-align: center;
@@ -305,8 +309,9 @@ section.slider{
 /* ========================================================Rodape===================================================== */
 
 footer{
+    margin: 0 !important;
+    padding: 0 !important;
     background-color: white;
-    height: auto;
     
 }
 .rodape{
@@ -338,7 +343,7 @@ footer{
 
 /* ===============================================Responsividade========================================================= */
 
-@media(max-width: 600px){
+@media(max-width: 640px){
     /* =======================NavBar====================== */
     .navbar-light{
         display: grid !important;
@@ -372,9 +377,10 @@ footer{
    }
    
    .container-box{
+    display: flex;
     position: relative;
     padding: 15px;
-    max-width: 600px;
+    max-width: 450px !important;
     margin: 0 auto;
 
 
@@ -391,7 +397,7 @@ footer{
    }
 
    .arrow-left, .arrow-right{
-    margin: -6%;
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -410,7 +416,7 @@ footer{
    }
    
    .item{
-    width: 306px;
+    width: 150px;
     height: auto;
     flex-shrink: 0;
     opacity: 0.3;
@@ -426,6 +432,41 @@ footer{
     border: 3px solid #4ac3e0;
     border-radius: 5px;
    }
+
+
+   /* =================================Serviços============================ */
+   .service-box{
+    display: none;
+   }
+
+   .service-mobile{
+    margin: 0;
+    display: flex;
+
+    justify-content: center;
+   }
+
+   #img-service{
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+   }
+
+   .desc{
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    font-size: 1,9rem;
+    text-shadow: 0.1em 0.1em 0.2em #022129;
+    
+    padding-inline-start: 1em;
+   }
+    
+   
+
+   
+
+
 
 
 }
