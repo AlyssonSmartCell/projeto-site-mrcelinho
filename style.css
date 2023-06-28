@@ -375,6 +375,10 @@ footer{
     
 
    }
+
+   .titulocursos h1{
+    font-size: 1.8em !important;
+   }
    
    .container-box{
     display: flex;
@@ -440,26 +444,36 @@ footer{
    }
 
    .service-mobile{
-    margin: 0;
     display: flex;
+
+    margin: 0;
+    margin-top: 3em;
+    margin-bottom: 3em;
 
     justify-content: center;
    }
 
    #img-service{
     padding: 5px;
+
     width: 150px;
     height: 150px;
    }
 
    .desc{
+       color: white;
+
     font-size: 13px;
-    color: white;
     font-weight: bold;
     font-size: 1,9rem;
     text-shadow: 0.1em 0.1em 0.2em #022129;
     
-    padding-inline-start: 1em;
+    padding-inline-start: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
    }
     
    
