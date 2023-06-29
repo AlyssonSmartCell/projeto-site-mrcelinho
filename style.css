@@ -572,6 +572,14 @@ footer{
 
 
 }
+
+@media(max-width: 400px) {
+    .desc li{
+        
+        font-size: 10px !important;
+    }
+    
+}
     
 
 
