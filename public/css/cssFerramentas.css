@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* =========================================navbar============================================================= */
+.menu{
+    display: none !important;
+}
+
+.nav-itens{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.nav-itens li a{
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #4ac3e0;
+    border: 2px solid #4ac3e0;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+
+
+
+}
+
+.nav-itens li a:hover{
+    background-color: #d0d0d0;
+    border: 2px solid #d0d0d0;
+    transition: 1.0s;
+}
+
+.navbar-brand{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: black;
+
+}
+
+.sp a:hover{
+    background-color: lightgreen !important;
+    border: 2px solid lightgreen !important;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 640px){
+    /* =======================NavBar====================== */
+    .navbar-light{
+        display: grid !important;
+        grid-template-areas: 
+        'img vazio menu';
+        
+    }
+    
+    .navbar-brand{
+        width: 130px;
+        height: 40px;
+    }
+    
+    .navbar-brand img{
+        width: 130px;
+        height: 40px;
+    }
+    .menu{
+        display: flex !important;
+        grid-area: menu;
+
+    }
+
+    .nav-itens{
+        display: none;
+
+    }
+
+    .menu{
+        display: flex;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .itens-mobile li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        list-style: none;
+        font-weight: bold;
+        text-shadow: 0.1em 0.1em 0.2em #4ac3e0;
+        
+        
+    }
+    .nav-list{padding: 0.3rem;}
+    .nav-list a{
+        text-decoration: none;
+        text-align: center;
+        color: white ;
+    }
+
+    .nav-list a:hover{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .open{
+        display: block !important;
+    }
+
+    .slider-content{
+        margin-top:20px ;
+    }
+}

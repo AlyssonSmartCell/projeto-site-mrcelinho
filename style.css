@@ -1,8 +1,8 @@
-/* =========================================navbar============================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
+/* =========================================navbar============================================================= */
 .menu{
     display: none !important;
 }
@@ -352,6 +352,97 @@ footer{
     justify-content: end;
 
     gap: 0.7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================paginaferramentas======================================================================== */
+
+.ferramentas-box{
+    background-color: #d0d0d0;
+
+    padding: 2px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    flex: 1 1 auto;    
+    
+}
+
+.ferramentas{
+    border: 2px solid red;
+    padding: 2px;
+    
+    display: grid;
+    grid-template-areas: 
+    'img img desc '
+    'img img desc '
+    'img img desc '
+    'gallery gallery gallery';
+    flex: 1 1 auto; 
+    
+
+    gap: 2px;
+
+    width: 49.86%;
+    height: 480px;
+
+}
+
+.img-principal{
+    grid-area: img;
+
+    border: 2px solid blue;
+}
+
+.desc-ferramenta{
+    grid-area: desc;
+    border: 2px solid blue;
+}
+
+.img-previa{
+    grid-area: gallery;
+    border: 2px solid blue;
+    
 }
 
 
