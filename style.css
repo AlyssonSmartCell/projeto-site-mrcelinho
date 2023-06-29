@@ -320,29 +320,38 @@ section.slider{
 footer{
     margin: 0 !important;
     padding: 0 !important;
-    background-color: white;
+    background-color: #121214;
     
 }
 .rodape{
     display: flex;
     
+    
 
+}
+.criador{
+    display: flex;
+    align-items: center;
 }
 
 .criador h1{
-    font-size: 15px;
+    font-size: 0.7em;
+    color: white;
 }
 
 
 
 .redes-sociais a img{
-    height: 30px;
-    width: 30px;
+    height: 1.2em;
+    width: 1.2em;
     
 }
 
 .redes-sociais{
     display: flex;
+    justify-content: end;
+
+    gap: 0.7em;
 }
 
 
@@ -423,9 +432,10 @@ footer{
     
    .cursos{
     display: none;
+   }
 
-    
-
+   .titulocursos h1{
+    font-size: 2rem;
    }
    
    .container-box{
@@ -489,9 +499,12 @@ footer{
    /* =================================Serviços============================ */
    .service-box{
     display: none;
+    
    }
 
    .service-mobile{
+    padding: 3em !important;
+    padding-bottom: 0 !important;
     margin: 0;
     display: flex;
 
@@ -511,8 +524,45 @@ footer{
     font-size: 1,9rem;
     text-shadow: 0.1em 0.1em 0.2em #022129;
     
-    padding-inline-start: 1em;
+    padding-inline-start: 2em;
    }
+
+   #btn-service{
+    background-color: #022129;
+    border: 3px solid #022129;
+    font-family: 'Merriweather', serif;
+    border-radius: 10px;
+    
+    
+    
+    text-align: center;
+   }
+
+    #btn-service:hover{
+    background-color: #4ac3e0;
+    color: black;
+    box-shadow: 0 0 80px #0d94b6 ;
+    border: none;
+    }
+
+    #btn-service a:hover{
+        color: black;
+    }
+
+   .btn-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    
+    }
+
+    #btn-service a{
+        color: white;
+        text-decoration: none;
+        padding: 25px;
+        
+    }
     
    
 
