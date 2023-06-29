@@ -307,6 +307,11 @@ section.slider{
     display: none;
 }
 
+.itens-mobile{
+    display: none;
+}
+
+
 
 
 
@@ -378,6 +383,36 @@ footer{
 
     .menu{
         display: flex;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .itens-mobile li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        list-style: none;
+        font-weight: bold;
+        text-shadow: 0.1em 0.1em 0.2em #4ac3e0;
+        
+        
+    }
+    .nav-list{padding: 0.3rem;}
+    .nav-list a{
+        text-decoration: none;
+        text-align: center;
+        color: white ;
+    }
+
+    .nav-list a:hover{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .open{
+        display: block !important;
     }
 
     .slider-content{
@@ -391,10 +426,6 @@ footer{
 
     
 
-   }
-
-   .titulocursos h1{
-    font-size: 1.8em !important;
    }
    
    .container-box{
@@ -461,41 +492,26 @@ footer{
    }
 
    .service-mobile{
-    display: flex;
-
     margin: 0;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    display: flex;
 
     justify-content: center;
    }
 
    #img-service{
     padding: 5px;
-<<<<<<< HEAD
     width: 130px;
     height: 130px;
-=======
-
-    width: 150px;
-    height: 150px;
->>>>>>> c96c5f026e253f94f2c87a4a9b6c7b5ef4875df6
    }
 
    .desc{
-       color: white;
-
     font-size: 13px;
+    color: white;
     font-weight: bold;
     font-size: 1,9rem;
     text-shadow: 0.1em 0.1em 0.2em #022129;
     
-    padding-inline-start: 2em;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    padding-inline-start: 1em;
    }
     
    

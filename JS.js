@@ -73,6 +73,17 @@ control.forEach(control =>{
 });
 
 
+// =======================================menumobile=====================
+
+function mostrarMenu(){
+    let menu = document.querySelector('.itens-mobile');
+    if(menu.classList.contains('open')){
+        menu.classList.remove('open')
+    }else{
+        menu.classList.add('open')
+    }
+}
+
 
 
 
