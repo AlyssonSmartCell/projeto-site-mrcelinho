@@ -421,6 +421,10 @@ footer{
 
     flex: 1 1 auto;
 
+    border: 2px solid wheat;
+    border-radius: 5px;
+    background-color: #d0d0d0;
+
     
     
 
@@ -444,13 +448,49 @@ footer{
 .desc-ferramenta{
     grid-area: desc;
     width: 100%;
-    color: white;
+    color: black;
     font-weight: bold;
     text-justify: auto;
+    display: grid;
+    grid-template-areas: 
+    'titulo'
+    'descricao'
+    'botao';
 
     
     
 }
+.btn-desc {
+    grid-area: botao;
+    
+    
+}
+.btn-desc button{
+    border: none;
+    background-color: rgb(4, 241, 4);
+    border-radius: 2px;
+
+}
+
+.btn-desc a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-desc button:hover, .btn-desc a:hover{
+    background-color: #022129;
+    text-decoration: none;
+    color: white;
+}
+
+.desc-ferramenta h1{
+    grid-area: titulo;
+}
+.li{
+    grid-area: descricao;
+}
+
 
     
 
@@ -729,6 +769,22 @@ footer{
     .img-previa{
         grid-area: prev;
     }
+
+    .desc-ferramenta h1{
+        text-align: center;
+    }
+
+    .li{
+        margin-left: 1rem;
+    }
+
+    .btn-desc{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    
    
 
    
