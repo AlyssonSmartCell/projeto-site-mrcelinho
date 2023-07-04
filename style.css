@@ -750,16 +750,21 @@ footer{
         'img '
         'prev '
         'desc';
+        
     }
 
     .img-principal{
         grid-area: img;
         width: 100%;
-    }
+        display: flex;
+        justify-content: center;
+        margin-left: 0.2rem;
+    }  
 
     .img-principal img{
         width: 100%;
         border: none;
+
     }
 
     .desc-ferramenta{
