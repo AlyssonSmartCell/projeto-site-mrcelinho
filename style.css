@@ -419,6 +419,8 @@ footer{
 
     max-width: 550px;
 
+    flex: 1 1 auto;
+
     
     
 
@@ -741,7 +743,54 @@ footer{
         
         font-size: 10px !important;
     }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ===================================================Ferramentas============================================== */
+    .ferramentas-box{
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ferramentas{
+        width: 400px !important;
+        justify-content: center;
+    }
+
+    .img-principal{
+        max-width: 390px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-previa {
+        max-width: 400px;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+
+    .column img{
+        width: 70px;
+        height: 75px;
+    }
+
+    .desc-ferramenta{
+        width: 400px;
+        font-size: 18px;
+    }
 }
 
 
