@@ -311,6 +311,10 @@ section.slider{
     display: none;
 }
 
+#btn-service{
+    display: none;
+}
+
 
 
 
@@ -607,6 +611,63 @@ footer{
 
 
 
+
+/* ================================================================PAGINA SERVIÇOS=========================================== */
+
+
+.pgservicos{
+    
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2 2 auto;
+    
+
+}
+
+.pgservicos h1{
+    display: flex;
+    color: white;
+    font-family:'Merriweather', serif ;
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 0.1em 0.1em 0.2em #0d94b6;
+    flex: 2 2 auto;
+}
+.pgservicos ul{
+    color: #0d94b6;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: -2px 0 black, 0 2px black,
+      2px 0 black, 0 -2px black;
+    
+
+    font-weight: bold;
+    font-family:'Merriweather', serif ;
+}
+
+/* ================================================================PAGINA SERVIÇOS=========================================== */
+
+@media(max-width: 770px){
+
+    .pgservicos h1{
+        font-size: 1.5rem;
+    }
+    .pgservicos ul{
+        font-size: 1rem;
+    }
+}
+    
+
+
+
+
 /* ===============================================Responsividade========================================================= */
 
 @media(max-width: 680px){
@@ -749,6 +810,7 @@ footer{
     display: none;
     
    }
+   
 
    .service-mobile{
     padding: 3em !important;
@@ -776,6 +838,7 @@ footer{
    }
 
    #btn-service{
+    display: block;
     background-color: #022129;
     border: 3px solid #022129;
     font-family: 'Merriweather', serif;
@@ -861,6 +924,18 @@ footer{
         width: 100%;
         justify-content: center;
           }
+
+    /* ================================================================PAGINA SERVIÇOS=========================================== */
+
+
+    
+
+    .pgservicos h1{
+        font-size: 1.5rem;
+    }
+    .pgservicos ul{
+        font-size: 1rem;
+    }
 
     
    
