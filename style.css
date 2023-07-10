@@ -652,6 +652,98 @@ footer{
     font-family:'Merriweather', serif ;
 }
 
+/* ==================================================PAGINA SUPORTE===================================================================== */
+
+
+.sptecnico{
+    display: flex;
+   
+    flex-direction: column;
+
+}
+
+.sptecnico h1{
+    text-align: center;
+    color: white;
+    font-family:'Merriweather', serif ; 
+    font-weight: bold;
+    text-shadow: -2px 0 black, 0 2px black,
+      2px 0 black, 0 -2px black;
+}
+.teste{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    margin: 5%;
+}
+
+.email h3, .wpp h3{
+    color: white;
+    font-family:'Merriweather', serif ; 
+
+}
+
+#h3-gmail{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.email img{
+    width: 50px;
+    height: 40px;
+    margin-left: calc(100% / 3);
+}
+
+.wpp img{
+    width: 50px;
+    height: 50px;
+    margin-left: calc(100% / 3);
+}
+
+#whatsapp2{
+    display: none;
+}
+
+
+
+
+.redessociais{
+    display: grid;
+    grid-template-areas: 
+    'tittle tittle'
+    'img1 img2';
+    gap: 10px;
+}
+
+.redessociais h1{
+    grid-area: tittle;
+}
+
+#insta img{
+    grid-area: img1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    
+}
+#insta {
+    display: flex;
+    justify-content: end;
+    
+}
+
+
+
+#face, #face img{
+    grid-area: img2;
+    width: 50px;
+    height: 50px
+}
+
+
+
+
 /* ================================================================PAGINA SERVIÇOS=========================================== */
 
 @media(max-width: 770px){
@@ -935,6 +1027,25 @@ footer{
     }
     .pgservicos ul{
         font-size: 1rem;
+    }
+
+
+    /* ==================================================================Pg Suporte========================================= */
+
+    .sptecnico h1{
+        font-size: 28px;
+        margin-top: 15%;
+    }
+
+    .teste h3{
+        font-size: 20px;
+    }
+
+    #whatsapp{
+        display: none;
+    }
+    #whatsapp2{
+        display: block;
     }
 
     
